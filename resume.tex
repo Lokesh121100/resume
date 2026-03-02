@@ -1,0 +1,131 @@
+\documentclass[a4paper,8pt]{article}
+
+\usepackage{parskip} 
+\usepackage{hologo}
+\usepackage{fontspec}
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9, top=.4in, bottom=.4in]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.42\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{1pt}{2pt}{2pt}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\color[HTML]{110223}
+
+%for social icons
+\usepackage{fontawesome5}
+
+% For underline
+\usepackage[normalem]{ulem}
+
+\setmainfont{Arial}  % Set it to whatever you like
+
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\color[HTML]{1C033C} \Huge{Lokesh J} \\[6pt]
+\\
+\textcolor[HTML]{371e77}{{{{\faMobile} 8072904177}} $|$}
+\textcolor[HTML]{371e77}{{{{\faEnvelope} lokesh121100@gmail.com}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} LinkedIn}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} GitHub}} $|$}
+\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faCode} Leetcode}}}
+\end{tabularx}
+
+\section{Skills Summary}
+\color[HTML]{1C033C}\textbf{Languages:} Python, SQL\\[3pt]
+\color[HTML]{1C033C}\textbf{Libraries:} NumPy, Pandas\\[3pt]
+\color[HTML]{1C033C}\textbf{Tools:} Power BI, Excel, PowerPoint, Oracle SQL, MySQL, Jira, Git, GitHub, Jupyter Notebook, VS Code\\[3pt]
+\color[HTML]{1C033C}\textbf{Key Skills:} ETL, Power Query, Data Modeling, Data Visualization, DAX, Agile Methodologies, Scrum, Project Management, Stakeholder Management\\[3pt]
+
+%Experience
+\section{Work Experience}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{{Spire.AI}} \hfill \color[HTML]{371e77} February 2025 - Present \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Data Analyst}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Gathered data from various sources (Google Analytics, Google Play Console, LinkedIn, databases) ensuring data integrity and accuracy.
+        \item Cleaned and preprocessed raw data using Power Query and Python, improving data quality by 20\%.
+        \item Created insightful visualizations using Power BI, enhancing stakeholder understanding by 30\% and facilitating data-driven decisions.
+        \item Conducted A/B testing to assess business initiatives, providing actionable recommendations with an 80\% success rate.
+        \item Generated comprehensive reports and dashboards, resulting in a 40\% increase in stakeholder engagement and effectively communicating complex analyses.
+        \item Managed client accounts with a 98\% resolution rate, identifying improvements that increased client satisfaction by 20\%.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{{PwC}} \hfill \color[HTML]{371e77} June 2024 - December 2024 \\[4pt]
+\color[HTML]{371e77}\textbf{\textit{Power BI Developer Intern}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item Created a performance report to analyze trends and set KPIs, achieving actionable insights to improve customer satisfaction (3.40/5 rating).
+        \item Analyzed data from 7043 customers, revealing a 26.54\% churn rate, and used DAX functions to drive retention strategies.
+        \item Developed operational efficiency metrics and utilized data-driven approaches to reduce churn and improve retention.
+        \item Delivered insights on gender representation, helping shape policies to promote workplace diversity.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\color[HTML]{1C033C} \textbf{Vellore Institute of Technology} & \hfill \color[HTML]{371e77} May 2019 – June 2024 \\
+\color[HTML]{371e77} M.SC Computational Statistics and Data Analytics & \hfill \color[HTML]{4B28A4} \textit{\textbf{GPA: 7.14}} \\
+\end{tabularx}
+
+% Projects
+\section{Projects}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Sales Insights - Brick \& Mortar Business:} Designed a Power BI dashboard to analyze sales trends for AtliQ hardware goods. Provided insights on product performance that are projected to boost revenue by 7\% through data-driven decisions.
+        \item \textbf{T20 World Cup Cricket Data Analytics:} Developed a Power BI report to identify top 11 players by scraping data from ESPNcricinfo. Cleaned data with Pandas and created an interactive dashboard to visualize player performance.
+    \end{itemize}
+    \end{minipage}
+\end{tabularx}
+
+% Certificates
+\section{Certifictes}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
+        \item \textbf{Agile Scrum Master:} Certified in Agile methodologies with a focus on Scrum framework to improve project management.
+        \item \textbf{Google Data Analytics:} Completed Professional Certificate with skills in SQL, Tableau, and R for data sharing and analysis.
+    \end{itemize}
+\end{minipage}
+\end{tabularx}
+
+\end{document}
