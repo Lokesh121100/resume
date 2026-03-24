@@ -19,6 +19,7 @@ jobs:
           root_file: resume.tex
           compiler: xelatex
           args: -pdf -interaction=nonstopmode -halt-on-error
+          pre_compile: tlmgr install tex-gyre && fc-cache -fv
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
