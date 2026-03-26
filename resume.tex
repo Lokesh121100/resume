@@ -33,10 +33,10 @@
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-\titlespacing{\section}{1pt}{2pt}{2pt}
+\titlespacing{\section}{0pt}{10pt}{2pt}
 
 %Setup hyperref package, and colours for links
-\usepackage[unicode, draft=false]{hyperref}
+\usepackage[unicode, draft=false, hidelinks]{hyperref}
 \color[HTML]{110223}
 
 %for social icons
@@ -45,7 +45,7 @@
 % For underline
 \usepackage[normalem]{ulem}
 
-\setmainfont{TeX Gyre Heros}  % Arial-compatible font available on all platforms
+\setmainfont{Latin Modern Sans}  % Available in all TeX Live installations
 
 \begin{document}
 
@@ -56,79 +56,57 @@
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \color[HTML]{1C033C} \Huge{Lokesh J} \\[6pt]
 \\
-\textcolor[HTML]{371e77}{{{{\faMobile} 8072904177}} $|$}
+\textcolor[HTML]{371e77}{{{{\faMobile} +91 8072904177}} $|$}
 \textcolor[HTML]{371e77}{{{{\faEnvelope} lokesh121100@gmail.com}} $|$}
-\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faLinkedin} LinkedIn}} $|$}
-\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faGithub} GitHub}} $|$}
-\textcolor[HTML]{371e77}{\underline{{\raisebox{-0.05\height}{\faCode} Leetcode}}}
+\textcolor[HTML]{371e77}{\href{https://www.linkedin.com/in/lokesh-j-2a126432a}{\underline{{\raisebox{-0.05\height}{\faLinkedin} LinkedIn}}} $|$}
+\textcolor[HTML]{371e77}{\href{https://github.com/Lokesh121100}{\underline{{\raisebox{-0.05\height}{\faGithub} GitHub}}} $|$}
+\textcolor[HTML]{371e77}{\href{https://leetcode.com/u/lokesh1211/}{\underline{{\raisebox{-0.05\height}{\faCode} Leetcode}}}}
 \end{tabularx}
 
-\section{Skills Summary}
-\color[HTML]{1C033C}\textbf{Microsoft SharePoint:} SharePoint Online (M365), SharePoint Administration, SharePoint Framework\\[3pt]
-\color[HTML]{1C033C}\textbf{SharePoint Migration:} SPMT, ShareGate, On-Premises Migration, Pre/Post Migration Validation\\[3pt]
-\color[HTML]{1C033C}\textbf{Microsoft Power Platform:} Power Apps, Power Automate, Power BI, Dataverse, Power Pages, Copilot Studio, Power Platform Admin Center\\[3pt]
-\color[HTML]{1C033C}\textbf{Cloud Technologies:} Azure, Microsoft Entra ID, Azure Blob Storage, Azure Monitor, Microsoft Purview, Microsoft 365 Admin Center\\[3pt]
-\color[HTML]{1C033C}\textbf{Technologies \& Tools:} VS Code, Graph Explorer, Microsoft Excel, Oracle SQL, MySQL\\[3pt]
-\color[HTML]{1C033C}\textbf{API \& Integration:} Microsoft Graph API, REST APIs, OAuth 2.0, Webhooks, MCP\\[3pt]
-\color[HTML]{1C033C}\textbf{DevOps:} Azure DevOps, GitHub/Git, CI/CD Pipelines, PnP PowerShell, PAC CLI\\[3pt]
+\section{Skills}
+\color[HTML]{1C033C}\textbf{Microsoft SharePoint:} SharePoint Online (M365), SharePoint Administration, SharePoint Framework, SPFx\\
+\color[HTML]{1C033C}\textbf{SharePoint Migration:} SPMT, ShareGate, On-Premises Migration, Pre/Post Migration Validation\\
+\color[HTML]{1C033C}\textbf{Microsoft Power Platform:} Power Apps, Power Automate, Power BI, Dataverse, Power Pages, Copilot Studio\\
+\color[HTML]{1C033C}\textbf{Cloud Technologies:} Azure, Microsoft Entra ID, Azure Blob Storage, Azure Monitor, Microsoft Purview\\
+\color[HTML]{1C033C}\textbf{Technologies \& Tools:} VS Code, Microsoft Excel, Oracle SQL, MySQL\\
+\color[HTML]{1C033C}\textbf{API \& Integration:} Microsoft Graph API, REST APIs, OAuth 2.0, Webhooks, MCP\\
+\color[HTML]{1C033C}\textbf{DevOps:} Azure DevOps, GitHub/Git, CI/CD Pipelines, PnP PowerShell, PAC CLI, ServiceNow\\
 
 %Experience
 \section{Work Experience}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{{Spire.AI}} \hfill \color[HTML]{371e77} February 2025 - Present \\[4pt]
-\color[HTML]{371e77}\textbf{\textit{Data Analyst}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
-        \item Gathered data from various sources (Google Analytics, Google Play Console, LinkedIn, databases) ensuring data integrity and accuracy.
-        \item Cleaned and preprocessed raw data using Power Query and Python, improving data quality by 20\%.
-        \item Created insightful visualizations using Power BI, enhancing stakeholder understanding by 30\% and facilitating data-driven decisions.
-        \item Conducted A/B testing to assess business initiatives, providing actionable recommendations with an 80\% success rate.
-        \item Generated comprehensive reports and dashboards, resulting in a 40\% increase in stakeholder engagement and effectively communicating complex analyses.
-        \item Managed client accounts with a 98\% resolution rate, identifying improvements that increased client satisfaction by 20\%.
-    \end{itemize}
-\end{minipage}
-\end{tabularx}
+\noindent
+{\color[HTML]{1C033C}\textbf{{Spire.AI}}} \hfill {\color[HTML]{371e77}February 2025 - Present} \\
+{\color[HTML]{371e77}\textbf{\textit{Data Analyst}}}
+\vspace{-2pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1.5em]
+    \item Gathered data from various sources (Google Analytics, Google Play Console, LinkedIn, databases) ensuring data integrity and accuracy.
+    \item Cleaned and preprocessed raw data using Power Query and Python, improving data quality by 20\%.
+    \item Created insightful visualizations using Power BI, enhancing stakeholder understanding by 30\% and facilitating data-driven decisions.
+    \item Conducted A/B testing to assess business initiatives, providing actionable recommendations with an 80\% success rate.
+    \item Generated comprehensive reports and dashboards, resulting in a 40\% increase in stakeholder engagement and effectively communicating complex analyses.
+    \item Managed client accounts with a 98\% resolution rate, identifying improvements that increased client satisfaction by 20\%.
+\end{itemize}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\color[HTML]{1C033C} \textbf{{PwC}} \hfill \color[HTML]{371e77} June 2024 - December 2024 \\[4pt]
-\color[HTML]{371e77}\textbf{\textit{Power BI Developer Intern}}\ \hfill \color[HTML]{4B28A4} \\[5pt]
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
-        \item Created a performance report to analyze trends and set KPIs, achieving actionable insights to improve customer satisfaction (3.40/5 rating).
-        \item Analyzed data from 7043 customers, revealing a 26.54\% churn rate, and used DAX functions to drive retention strategies.
-        \item Developed operational efficiency metrics and utilized data-driven approaches to reduce churn and improve retention.
-        \item Delivered insights on gender representation, helping shape policies to promote workplace diversity.
-    \end{itemize}
-\end{minipage}
-\end{tabularx}
+
 
 % Education
 \section{Education}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\color[HTML]{1C033C} \textbf{Vellore Institute of Technology} & \hfill \color[HTML]{371e77} May 2019 – June 2024 \\
-\color[HTML]{371e77} M.SC Computational Statistics and Data Analytics & \hfill \color[HTML]{4B28A4} \textit{\textbf{GPA: 7.14}} \\
-\end{tabularx}
+\noindent
+{\color[HTML]{1C033C}\textbf{Vellore Institute of Technology}} \hfill {\color[HTML]{371e77}May 2019 – June 2024} \\
+{\color[HTML]{371e77}M.Sc. Computational Statistics and Data Analytics} \hfill {\color[HTML]{4B28A4}\textit{\textbf{GPA: 7.14}}}
 
 % Projects
-\section{Projects}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
-        \item \textbf{Sales Insights - Brick \& Mortar Business:} Designed a Power BI dashboard to analyze sales trends for AtliQ hardware goods. Provided insights on product performance that are projected to boost revenue by 7\% through data-driven decisions.
-        \item \textbf{T20 World Cup Cricket Data Analytics:} Developed a Power BI report to identify top 11 players by scraping data from ESPNcricinfo. Cleaned data with Pandas and created an interactive dashboard to visualize player performance.
-    \end{itemize}
-    \end{minipage}
-\end{tabularx}
+\section{Project Work}
+\begin{itemize}[nosep,after=\strut, leftmargin=1.5em, itemsep=3pt]
+    \item \textbf{Sales Insights - Brick \& Mortar Business:} Designed a Power BI dashboard to analyze sales trends for AtliQ hardware goods. Provided insights on product performance that are projected to boost revenue by 7\% through data-driven decisions.
+    \item \textbf{T20 World Cup Cricket Data Analytics:} Developed a Power BI report to identify top 11 players by scraping data from ESPNcricinfo. Cleaned data with Pandas and created an interactive dashboard to visualize player performance.
+\end{itemize}
 
 % Certificates
-\section{Certificates}
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=2em, itemsep=2pt]
-        \item \textbf{Agile Scrum Master:} Certified in Agile methodologies with a focus on Scrum framework to improve project management.
-        \item \textbf{Google Data Analytics:} Completed Professional Certificate with skills in SQL, Tableau, and R for data sharing and analysis.
-    \end{itemize}
-\end{minipage}
-\end{tabularx}
+\section{Awards and Certificates}
+\begin{itemize}[nosep,after=\strut, leftmargin=1.5em]
+    \item \textbf{Agile Scrum Master:} Certified in Agile methodologies with a focus on Scrum framework to improve project management.
+    \item \textbf{Google Data Analytics:} Completed Professional Certificate with skills in SQL, Tableau, and R for data sharing and analysis.
+\end{itemize}
 
 \end{document}
